@@ -49,7 +49,6 @@ const UploadPage = () => {
     if (files.length > 0) {
       setUploading(true);
       setTimeout(() => {
-        console.log("Uploaded Files:", files.map((f) => f.file.name));
         setSnackbarMessage("Files uploaded successfully!");
         setSnackbarSeverity("success");
         setUploading(false);
